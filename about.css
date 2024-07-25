@@ -1,0 +1,102 @@
+/* Responsive CSS */
+
+/* Ensure images and iframes are responsive */
+#section img,
+iframe {
+  width: 100%;
+  max-width: 100%; /* Prevent images and iframes from overflowing */
+  height: 90%;
+  border-radius: 20px;
+}
+
+/* Heading styles */
+.heading {
+  color: white;
+  font-weight: 800;
+  font-size: 36px; /* Adjusted font size for smaller screens */
+  text-align: left; /* Center align heading for better readability */
+  margin-bottom: 20px; /* Add space below heading */
+}
+
+/* Paragraph styles */
+p {
+  color: white;
+  font-size: 25px; /* Adjusted font size for smaller screens */
+  text-align: left; /* Left align paragraphs */
+}
+
+/* Address styles */
+.Address {
+  text-align: left;
+  margin-left: 20px; /* Adjusted margin for smaller screens */
+  font-size: 22px; /* Adjusted font size for smaller screens */
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Vision section styles */
+.Vision {
+  background-image: url("sm4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  text-shadow: 0 0 3px black, 0 0 5px #0000FF;
+  font-size: 18px; /* Adjusted font size for smaller screens */
+  background-color: #2E4053;
+  font-weight: bold;
+  padding: 20px; /* Increased padding for better spacing */
+  border: 0;
+  border-radius: 10px; /* Reduced border radius for smaller screens */
+  border: 3px solid white; /* Reduced border width for smaller screens */
+}
+.foot{
+    color: black;
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 400px) {
+  .heading {
+    font-size: 30px; /* Further reduce heading font size */
+  }
+
+  p {
+    font-size: 16px; /* Further reduce paragraph font size */
+  }
+
+  .Address {
+    margin-left: 10px; /* Further reduce margin for address */
+    font-size: 10px; /* Further reduce font size for address */
+    margin-bottom: 20%;
+  }
+  iframe{
+    height: 100%;
+  }
+
+  .Vision {
+    font-size: 16px; /* Further reduce font size for Vision section */
+    padding: 15px; /* Further reduce padding for Vision section */
+    border-radius: 5px; /* Further reduce border radius */
+    border-width: 2px; /* Further reduce border width */
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .heading {
+    font-size: 30px; /* Further reduce heading font size */
+  }
+
+  p {
+    font-size: 16px; /* Further reduce paragraph font size */
+  }
+
+  .Address {
+    font-size: 18px; /* Further reduce font size for address */
+  }
+
+  .Vision {
+    font-size: 25px; /* Further reduce font size for Vision section */
+    padding: 15px; /* Further reduce padding for Vision section */
+    border-radius: 5px; /* Further reduce border radius */
+    border-width: 2px; /* Further reduce border width */
+    margin-top: 20px;
+  }
+}

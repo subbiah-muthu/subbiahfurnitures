@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    background: #eee;
+}
+
+.cd__intro {
+    padding: 60px 30px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cd__intro h1 {
+    font-size: 18pt;
+    padding-bottom: 15px;
+}
+
+.cd__intro p {
+    font-size: 14px;
+}
+
+.cd__action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cd__action a.cd__btn {
+    text-decoration: none;
+    color: #666;
+    border: 2px solid #666;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.cd__action a.cd__btn:hover {
+    background: #666;
+    color: #fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+
+.cd__action .cd__btn:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.down:before { content: "\f019"; }
+.back:before { content:"\f112"; }
+
+.cd__credit {
+    padding: 12px;
+    font-size: 9pt;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cd__credit span:before {
+    font-family: FontAwesome;
+    color: #e41b17;
+    content: "\f004";
+}
+
+.cd__credit a {
+    color: #333;
+    text-decoration: none;
+}
+
+.cd__credit a:hover {
+    color: #1DBF73; 
+}
+
+.cd__credit a:hover:after {
+    font-family: FontAwesome;
+    content: "\f08e";
+    font-size: 9pt;
+    position: absolute;
+    margin: 3px;
+}
+
+.cd__main {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1360px) {
+    .cd__main {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+body {
+    background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #262626;
+    margin: 5% 0;
+}
+
+.container {
+    width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    padding: 25px;
+}
+
+@media (min-width: 768px) {
+    .d-flex {
+        flex-direction: row;
+    }
+}
+
+form {
+    flex: 1;
+}
+
+.Yorder {
+    flex: 1;
+    margin-top: 15px;
+    padding: 20px;
+    border: 1px solid #dadada;
+}
+span{
+    margin-bottom: 0.5rem;
+}
+.title {
+    background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);
+    border-radius: 5px 5px 0 0;
+    padding: 20px;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.required {
+    color: red;
+}
+
+label, table {
+    display: block;
+    margin: 15px;
+}
+
+label > span {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+    label > span {
+        float: left;
+        width: 25%;
+    }
+}
+
+input[type="text"], input[type="tel"], input[type="email"],select {
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dadada;
+    color: #888;
+    border-radius: 20px;
+}
+.quantity-group input{
+    width: 1000rem;
+    height: 50px;
+    border: 1px solid #dadada;
+    color: #888;
+    border-radius: 20px;
+}
+
+select {
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+th {
+    border-bottom: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+tr > td:nth-child(1) {
+    text-align: left;
+    color: #2d2d2a;
+}
+
+tr > td:nth-child(2) {
+    text-align: right;
+    color: #52ad9c;
+}
+
+td {
+    border-bottom: 1px solid #dadada;
+    padding: 25px 25px 25px 0;
+}
+
+p {
+    display: block;
+    color: #888;
+    margin: 0;
+    padding-left: 25px;
+}
+
+.Yorder > div {
+    padding: 15px 0;
+}
+
+button {
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: #52ad9c;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #428a7d;
+}
+
+.quantity-group {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.quantity-group button {
+    padding: 10px 10px;
+    background-color: #5cb85c;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    background: none;
+}
+
+/* .quantity-group button:hover {
+    background-color: #5195A8;
+    border-radius: 5px;
+} */
+
+.quantity-group input {
+    max-width: 100px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .quantity-group {
+        max-width: 100px;
+    }
+
+    .quantity-group button {
+        padding: 5px 7px;
+        font-size: 14px;
+    }
+
+    .quantity-group input {
+        padding: 5px;
+        font-size: 14px;
+    }
+}

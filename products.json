@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "Popular Lounge Chair A",
+        "price": 1650,
+        "image": "images/chair1.png",
+        "category": "chair"
+    },
+    {
+        "id": 2,
+        "name": "Popular Lounge Chair B",
+        "price": 1800,
+        "image": "images/2.png",
+        "category": "chair"
+    },
+    {
+        "id": 3,
+        "name": "Popular Lounge Chair C",
+        "price": 500,
+        "image": "images/3.png",
+        "category": "chair"
+    },
+    {
+        "id": 4,
+        "name": "Popular Lounge Chair D",
+        "price": 1600,
+        "image": "images/4.png",
+        "category": "chair"
+    },
+    {
+        "id": 5,
+        "name": "Popular Lounge Chair E",
+        "price": 1300,
+        "image": "images/5.png",
+        "category": "chair"
+    },
+    {
+        "id": 6,
+        "name": "Work Table",
+        "price": 4500,
+        "image": "images/table 1.png",
+        "category": "table"
+    },
+    {
+        "id": 7,
+        "name": "Dinning Table",
+        "price": 8000,
+        "image": "images/t2.png",
+        "category": "table"
+    },
+    {
+        "id": 8,
+        "name": "Garden Table",
+        "price": 3000,
+        "image": "images/t3.png",
+        "category": "table"
+    },
+    {
+        "id": 9,
+        "name": "Coffee Table",
+        "price": 1700,
+        "image": "images/t4.png",
+        "category": "table"
+    },
+    {
+        "id": 10,
+        "name": "Work Table",
+        "price": 7500,
+        "image": "images/t5.png",
+        "category": "table"
+    },
+    {
+        "id": 11,
+        "name": "Cabriole sofa",
+        "price": 2500,
+        "image": "images/sofa 1.png",
+        "category": "sofa set"
+    },
+    {
+        "id": 12,
+        "name": "Wooden SofaSet",
+        "price": 10000,
+        "image": "images/s2.png",
+        "category": "sofa set"
+    },
+    {
+        "id": 13,
+        "name": "Small Chair",
+        "price": 3200,
+        "image": "images/6.png",
+        "category": "sofa set"
+    },
+    {
+        "id": 14,
+        "name": "Trendy Bed A",
+        "price": 18000,
+        "image": "images/bed1.png",
+        "category": "Bed"
+    },
+    {
+        "id": 15,
+        "name": "Trendy Bed B",
+        "price": 18000,
+        "image": "images/bed2.png",
+        "category": "bed"
+    },
+    {
+        "id": 16,
+        "name": "Trendy Bed C",
+        "price": 1700,
+        "image": "images/bed3.png",
+        "category": "window"
+    },
+    {
+        "id": 17,
+        "name": "Precious Cupboard",
+        "price": 1900,
+        "image": "images/cup1.png",
+        "category": "Cupboard"
+    },
+    {
+        "id": 18,
+        "name": "Popular Cupboard",
+        "price": 1800,
+        "image": "images/c2.png",
+        "category": "Cupboard"
+    },
+    {
+        "id": 19,
+        "name": "Popular Window",
+        "price": 8000,
+        "image": "images/w2.png",
+        "category": "window"
+    },
+    {
+        "id": 20,
+        "name": "Trible-Hung Windows",
+        "price": 11000,
+        "image": "images/w3.png",
+        "category": "cupboard"
+    }
+]

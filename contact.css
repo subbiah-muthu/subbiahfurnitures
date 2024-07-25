@@ -1,0 +1,71 @@
+/* Responsive CSS */
+
+/* Image styles */
+#section img {
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Make images fill their container */
+    max-width: 100%; /* Prevent images from overflowing */
+    display: block; /* Ensure images behave as block elements */
+    margin: 0 auto; /* Center align images */
+  }
+  
+  /* Rounded corners and border for images */
+  .img {
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+  
+  /* Responsive box width */
+  .box {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 100%; /* Ensure box does not overflow on smaller screens */
+    margin: 10px auto; /* Center align and add margin */
+  }
+  
+  /* Responsive form layout */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align form elements */
+  }
+  
+  /* Responsive input fields */
+  #contact input,
+  #contact textarea {
+    margin: 10px 0; /* Adjusted margins for spacing */
+    width: 80%; /* Adjusted width for smaller screens */
+    max-width: 100%; /* Ensure inputs do not overflow */
+  }
+  
+  /* Heading styles */
+  .heading {
+    color: white;
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Add space below heading */
+  }
+  .Signin{
+    width: 80%;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    
+    #section img {
+      height: auto; /* Ensure images maintain aspect ratio */
+      width: 100%; /* Make images fill their container */
+    }
+  
+    .box {
+      width: 95%; /* Further reduce box width for smaller screens */
+    }
+  
+    #contact input,
+    #contact textarea {
+      width: 90%; /* Further reduce input width for smaller screens */
+    }
+    .Signin{
+        width: 90%;
+    }
+  }
+  

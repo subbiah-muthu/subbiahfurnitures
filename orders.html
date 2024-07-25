@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Product Order Form</title>
+    <link rel="stylesheet" href="demo.css" />
+    <style>
+        .quantity-group {
+            display: flex;
+            align-items: center;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+
+        .quantity-group button {
+            padding: 10px 10px;
+            background-color: #5cb85c;
+            color: black;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            background: none;
+        }
+
+        /* .plus:hover {
+            background-color: #428a7d;
+        } */
+
+        .quantity-group input {
+            max-width: 1000px;
+            height: 50px;
+            border: 1px solid #dadada;
+            color: #888;
+            border-radius: 20px;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+        @media (max-width: 767px) {
+            .quantity-group {
+                max-width: 100px;
+            }
+
+            .quantity-group button {
+                padding: 5px 7px;
+                font-size: 14px;
+            }
+
+            .quantity-group input {
+                padding: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cd__intro">
+        <h1 style="text-transform: uppercase;">Subbiah Furnitures</h1>
+        <p>Product Order Form</p>
+        <div class="cd__action">
+            <a href="index.html" title="Back to download and tutorial page" class="cd__btn back">Back to Home</a>
+        </div>
+    </header>
+    <main class="cd__main">
+        <div class="container">
+            <div class="title">
+                <h2>Product Order Form</h2>
+            </div>
+            <div class="d-flex">
+                <form action="" method="">
+                    <label>
+                        <span class="fname">First Name <span class="required">*</span></span>
+                        <input type="text" name="fname" required>
+                    </label>
+                    <label>
+                        <span>Phone <span class="required">*</span></span>
+                        <input type="tel" name="phone" required>
+                    </label>
+                    <label>
+                        <span>Email Address <span class="required">*</span></span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span>Address <span class="required">*</span></span>
+                        <input type="text" name="houseadd" placeholder="House number and street name" required>
+                    </label>
+                    <label>
+                        <span>Quantity <span class="required">*</span></span>
+                        <div class="quantity-group" style="margin-left: 5%;">
+                            <button type="button" onclick="decrement()">-</button>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1" required style="width: 1000rem;">
+                            <button type="button" onclick="increment()" class="plus">+</button>
+                        </div>
+                    </label>
+                    <label>
+                        <span>Product Name<span class="required">*</span></span>
+                        <input type="text" name="product" required>
+                    </label>
+                    <label>
+                        <span>Town / City <span class="required">*</span></span>
+                        <input type="text" name="city" required>
+                    </label>
+                    <label>
+                        <span>State / County <span class="required">*</span></span>
+                        <input type="text" name="state" required>
+                    </label>
+
+                </form>
+                <div class="Yorder">
+                    <table>
+                        <tr>
+                            <th colspan="2">Your order</th>
+                        </tr>
+                        <tr>
+                            <td>Product Name x 2(Qty)</td>
+                            <td>$88.00</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$88.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>Free shipping</td>
+                        </tr>
+                    </table><br>
+                    <div>
+                        <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+                    </div>
+                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment
+                        reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                    <div>
+                        <input type="radio" name="dbt" value="cd"> Cash on Delivery
+                    </div>
+                    <div>
+                        <input type="radio" name="dbt" value="cd"> Paypal <span>
+                        <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+                        </span>
+                      </div>
+                    <button type="button">Place Order</button>
+                </div><!-- Yorder -->
+            </div>
+        </div>
+    </main>
+    <footer class="cd__credit">Author: Venkatesh - Distributed By: <a title="Free web design code & scripts"
+            href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+    <script>
+        function increment() {
+            var quantity = document.getElementById('quantity');
+            quantity.value = parseInt(quantity.value) + 1;
+        }
+
+        function decrement() {
+            var quantity = document.getElementById('quantity');
+            if (quantity.value > 1) {
+                quantity.value = parseInt(quantity.value) - 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+/* Default styles */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+  line-height: 25px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#part11 {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f6f7;
+}
+
+#part11 > div:first-child {
+  width: 18%;
+}
+
+#part11 input {
+  height: 30px;
+}
+
+#part11 input:last-child {
+  color: white;
+  background-color: #2f3337;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+/* Media query for tablets and larger screens */
+@media only screen and (min-width: 768px) {
+  #part11 {
+      gap: 30px;
+  }
+}
+
+/* Media query for larger screens like laptops and desktops */
+@media only screen and (min-width: 1024px) {
+  #part11 > div:first-child {
+      width: 15%; /* Adjust width as needed */
+  }
+}
+
+/* Styles for the 12th part */
+#part12 {
+  display: flex;
+  background-color: #545658;
+  justify-content: space-evenly;
+}
+
+#part12 ul li, #part12 a {
+  list-style-type: none;
+  width: 100%;
+  line-height: 40px;
+  color: white;
+}
+
+/* Styles for footer section */
+.footersec {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-around;
+  background-color: #2f3337;
+}
+
+.footersec p {
+  color: white;
+  text-align: left;
+  width: 100%; /* Ensure text fills the width */
+}
+
+/* Media query for smaller screens like phones */
+@media only screen and (max-width: 480px) {
+  #part11 {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items vertically */
+      width: 100%;
+      text-align: center;
+  }
+
+  #part11 > div:first-child {
+      width: 100%; /* Full width for the first div */
+      margin-bottom: 10px; /* Add space between elements */
+  }
+
+  #part11 input:last-child {
+      width: 100%; /* Full width for the button */
+      margin-top: 10px; /* Add space between elements */
+  }
+
+  #part12 {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items vertically */
+      border-bottom: 5px solid white;
+  }
+
+  #part12 ul li, #part12 a {
+      text-align: center; /* Center text */
+  }
+
+  .footersec {
+      padding: 10px; /* Add padding to footer section */
+      text-align: center;
+  }
+
+  .footersec p {
+      text-align: left; /* Center text */
+      justify-content: space-evenly;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+  }
+}
